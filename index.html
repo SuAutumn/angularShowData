@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+<head>
+	<meta charset="UTF-8">
+	<title>Angular 数据展示</title>
+	<style>
+		body {
+			font-family: 'Microsoft YaHei','Arial';
+			font-size: 14px;
+		}
+		div.songs {
+			margin: auto;
+		}
+		li {
+			list-style-type: none;
+		}
+		ul {
+			float: left;
+			/* clear: right; */
+		}
+		ul {
+			border: solid 1px #999;
+			margin: 5px;
+			border-radius: 3px;
+			background-color: rgba(255,0,0,0.4);
+		}
+		span {
+			clear: both;
+		}
+		ul.show {
+			background-color: transparent;
+			position: absolute;
+			right: 50px;
+		}
+		li.show ul {
+			display: none;
+		}
+		li.show:hover {
+			background-color: rgba(0,0,255,0.4)
+		}
+		li.show:hover>ul {
+			display: block;
+			background-color: rgba(0,0,255,0.4);
+		}
+	</style>
+	<script src = 'js/angular.js'></script>
+	<script src = 'js/jquery.js'></script>
+</head>
+<body>
+	<div>
+		<ul class='show'>
+			<li class='show'>HOME
+				<ul>
+					<li>MENU01</li>
+					<li>MENU02</li>
+					<li>MENU03</li>
+				</ul>
+			</li>	
+		</ul>
+	</div>
+	<div class = 'songs' ng-controller = 'songs'>
+		<div>
+			<span>Search:</span><input type="text" ng-model='search' placeholder='筛选'>
+		</div>
+		<ul ng-repeat = 'item in datas | filter:search'>
+			<!-- 取消输入filter字符串时候，
+			页面会重新刷新，
+			对于视频音频不友好，
+			请求数据太大，
+			就像重新打开一个界面 -->
+			<li>歌曲:{{item.song}}</li>
+			<li><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=260 height=86 src={{item.url}}></iframe></li>
+			<li>歌手:{{item.singer}}</li>
+			<li>专辑:{{item.Album}}</li>
+			<li>{{item.nation}}</li>
+		</ul>
+	</div>
+	<script src='js/songs.js'></script>
+</body>
+</html>

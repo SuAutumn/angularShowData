@@ -1,0 +1,51 @@
+[
+	{	
+		"song":"我会在你身边",
+		"singer":"金志文",
+		"Album":"夏洛特烦恼",
+		"nation":"China",
+		"url":"http://music.163.com/outchain/player?type=2&id=34916642&auto=0&height=66"
+	},
+	{
+		"song":"有个爱你的人不容易",
+		"singer":"那英",
+		"Album":"夏洛特烦恼",
+		"nation":"China",
+		"url":"http://music.163.com/outchain/player?type=2&id=34834746&auto=0&height=66"
+	},
+	{
+		"song":"一次就好",
+		"singer":"杨宗纬",
+		"Album":"夏洛特烦恼",
+		"nation":"China",
+		"url":"http://music.163.com/outchain/player?type=2&id=35470197&auto=0&height=66"
+	},
+	{
+		"song":"斑马，斑马",
+		"singer":"宋冬野",
+		"Album":"安和桥北",
+		"nation":"China",
+		"url":"http://music.163.com/outchain/player?type=2&id=39443443&auto=0&height=66"
+	},
+	{
+		"song":"董小姐",
+		"singer":"宋冬野",
+		"Album":"安和桥北",
+		"nation":"China",
+		"url":"http://music.163.com/outchain/player?type=2&id=25702068&auto=0&height=66"
+	},
+	{
+		"song":"when you say nothing at all",
+		"singer":"Alison Krauss",
+		"Album":"Now that I've found you",
+		"nation":"American",
+		"url":"http://music.163.com/outchain/player?type=2&id=16439857&auto=0&height=66"
+	},
+	{
+		"song":"南山南",
+		"singer":"马頔",
+		"Album":"南山南",
+		"nation":"China",
+		"url":"http://music.163.com/outchain/player?type=2&id=29436904&auto=0&height=66"
+	}
+]
